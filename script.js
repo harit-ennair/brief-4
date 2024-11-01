@@ -13,8 +13,11 @@ function add(){
 
 
     if (mytitle === '' || mydate === '' || mydescription === '' || mychos === '') {
+
      alert("You must write something!");
+
     }else{
+      
       let table = document.getElementById('table');
       let newRow =table.insertRow();
       newRow.classList.add("border-bottom","brd_btm");
@@ -74,12 +77,13 @@ function add(){
       });
 
 
+      
+        document.getElementById("title").value = "";
+        document.getElementById("date").value = "";
+        document.getElementById("description").value = "";
+        document.getElementById("chos").value = "TO DO";
+        
     }
 
-
-  document.getElementById("title").value = "";
-  document.getElementById("date").value = "";
-  document.getElementById("description").value = "";
-  document.getElementById("chos").value = "TO DO";
   console.log(stoc);
 }
